@@ -1,0 +1,21 @@
+# Local database credentials (copy config/config.example.php → config/config.php)
+config/config.php
+
+# Editor / tool folders
+.claude/
+.vscode/
+.idea/
+
+# OS junk
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Old design backups + an old duplicate copy of the static site
+_archive/
+/Uni Wise/
+
+# User uploads (keep the folder rules)
+uploads/*
+!uploads/.htaccess
+
