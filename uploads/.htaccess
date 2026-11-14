@@ -1,0 +1,5 @@
+# User uploads: never run scripts or list files here.
+Options -Indexes
+<FilesMatch "\.(php\d?|phtml|phar|pl|py|cgi|sh|asp|aspx|jsp|html?|svg)$">
+    Require all denied
+</FilesMatch>
