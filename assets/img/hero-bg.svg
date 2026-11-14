@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#8a6cf2" stop-opacity=".55"/><stop offset="1" stop-color="#8a6cf2" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g2" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#c9b8fb" stop-opacity=".7"/><stop offset="1" stop-color="#c9b8fb" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g3" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#b05bd3" stop-opacity=".35"/><stop offset="1" stop-color="#b05bd3" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#6247d8" fill-opacity=".18"/></pattern>
+    <linearGradient id="line" x1="0" x2="1"><stop offset="0" stop-color="#6247d8" stop-opacity="0"/><stop offset=".5" stop-color="#6247d8" stop-opacity=".35"/><stop offset="1" stop-color="#6247d8" stop-opacity="0"/></linearGradient>
+  </defs>
+
+  <!-- soft glows -->
+  <circle cx="1180" cy="120" r="420" fill="url(#g2)"/>
+  <circle cx="1320" cy="560" r="300" fill="url(#g1)"/>
+  <circle cx="140" cy="200" r="320" fill="url(#g3)"/>
+
+  <!-- dotted field, fading to the left -->
+  <rect x="760" y="0" width="680" height="720" fill="url(#dots)" opacity=".9"/>
+
+  <!-- flowing lines -->
+  <g fill="none" stroke="url(#line)" stroke-width="1.5">
+    <path d="M-40 560 C 300 470, 520 650, 860 540 S 1300 380, 1500 460"/>
+    <path d="M-40 610 C 320 520, 560 700, 900 590 S 1320 430, 1500 520" opacity=".7"/>
+    <path d="M-40 660 C 340 570, 600 750, 940 640 S 1340 480, 1500 580" opacity=".45"/>
+  </g>
+
+  <!-- orbit rings -->
+  <g fill="none" stroke="#6247d8" stroke-opacity=".16">
+    <circle cx="1180" cy="300" r="190" stroke-width="1.5"/>
+    <circle cx="1180" cy="300" r="270" stroke-width="1" stroke-dasharray="4 8"/>
+  </g>
+  <circle cx="1370" cy="300" r="7" fill="#8a6cf2" fill-opacity=".6"/>
+  <circle cx="1012" cy="210" r="5" fill="#b05bd3" fill-opacity=".55"/>
+
+  <!-- floating graduation cap -->
+  <g transform="translate(1110 250) rotate(-10)" opacity=".22">
+    <path d="M70 0 L140 34 L70 68 L0 34 Z" fill="#6247d8"/>
+    <path d="M30 50 V82 C30 100 110 100 110 82 V50" fill="none" stroke="#6247d8" stroke-width="8" stroke-linecap="round"/>
+    <path d="M128 40 V86" stroke="#6247d8" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="128" cy="92" r="7" fill="#6247d8"/>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#6247d8">
+    <path d="M940 110 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5z" fill-opacity=".35"/>
+    <path d="M1340 160 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z" fill-opacity=".3"/>
+    <path d="M880 420 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z" fill-opacity=".3"/>
+    <path d="M520 90 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z" fill-opacity=".22"/>
+  </g>
+</svg>
